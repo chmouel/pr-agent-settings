@@ -1,4 +1,4 @@
-#[github_action_config]
-#auto_review = true
-#auto_describe = false
-#auto_improve = false
+[pr_description] # /describe #
+enable_pr_diagram=false
+publish_labels=true
+final_update_message=false
