@@ -1,7 +1,6 @@
 [github_app]
 pr_commands = [
-    "/review",
-    "/generate_labels"
+    "/review"
 ]
 
 [pr_reviewer]
