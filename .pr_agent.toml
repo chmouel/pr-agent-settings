@@ -1,9 +1,9 @@
 [github_app]
-pr_commands = [ "/review", "/generate_labels" ]
+pr_commands = [ "/review", "/generate_labels", "/improve" ]
 
 [pr_reviewer]
 enable_review_labels_security = true
-enable_review_labels_effort = true
+enable_review_labels_effort = false
 
 [pr_description]
 publish_description_as_comment = true
