@@ -4,6 +4,11 @@ pr_commands = [
 ]
 
 [pr_reviewer]
-enable_review_labels_security = true  # Adds 'possible security issue' label if detected
-enable_review_labels_effort = true    # Adds 'Review effort [x/5]' label
+enable_review_labels_security = true 
+enable_review_labels_effort = true   
 
+[pr_description]
+publish_description_as_comment = true 
+
+[pr_code_suggestions]
+commitable_code_suggestions = true 
