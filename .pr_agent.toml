@@ -1,21 +1,9 @@
 [github_app]
-# Defines which tools run automatically on a new PR
 pr_commands = [
-    "/review",          # Provides general feedback and labels
-    "/improve",         # Generates the line-level suggestions
-    "/generate_labels"  # Specifically for label generation
+    "/review",
 ]
 
-[pr_description]
-# Ensure the describe tool doesn't overwrite your description
-publish_description_as_comment = true 
-# Or simply remove "/describe" from pr_commands above
-
-[pr_code_suggestions]
-# This fires the review comments directly onto the code lines
-commitable_code_suggestions = true 
-
 [pr_reviewer]
-# Enables the review tool to add labels like 'review effort' and 'security'
-enable_review_labels_security = true
-enable_review_labels_effort = true
+enable_review_labels_security = true  # Adds 'possible security issue' label if detected
+enable_review_labels_effort = true    # Adds 'Review effort [x/5]' label
+
